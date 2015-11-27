@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-GB">
+    <head>
+
+        <title>base.dev / </title>
+        
+        <meta charset="UTF-8" />
+        <meta name="description" content="Base.dev" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@handle" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:creator" content="@handle" />
+        <meta name="twitter:image:src" content="" />
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:site_name" content="" />
+        
+        <link rel="stylesheet" type="text/css" media="all" href="static/css/screen.css" />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,300italic,400italic,700italic,600italic,800,800italic' rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Hind:400,300,500,600,700' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
+        
+    </head>
+<body>
+ 
+<header class="demo-section">
+    
+    <h1 class="demo-header">base.dev</h1>
+    <p>Quick and easy way to preview styles.</p>
+    
+    <nav id="demo-navigation">
+        <ul>
+            <li><a href="#content-grid">Grid</a></li>
+            <li><a href="#content-typography">Typography</a></li>
+            <li><a href="#content-lists">Lists</a></li>
+            <li><a href="#content-tables">Tables</a></li>
+            <li><a href="#content-forms">Forms</a></li>
+            <li><a href="#content-buttons">Buttons</a></li>
+        </ul>
+    </nav>
+
+</header>    
+ 
+<section id="content-grid" class="demo-section">
+
+    <h1 class="demo-title">Social Sharing</h1>
+    <p class="demo-details"></p>
+    
+    <div class="row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <div id="socialr"></div>
+            <br />
+            <div id="socialr_2"></div>
+            <br />
+            <div id="socialr_3"></div>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;div id="socialr"&gt;&lt;/div&gt;
+
+$("#socialr").socialr({
+    title: "BASE.DEV",
+    url: "http://google.com/",
+    shares: ['twitter','facebook','linkedin','googleplus'],
+    via: "inoratdawn",
+    hashtags: "base,dev,localhost",
+    icon: true,
+    count: true,
+    label: false
+});
+
+&lt;meta name=&quot;description&quot; content=&quot;Base.dev&quot; /&gt;
+&lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot; /&gt;
+&lt;meta name=&quot;twitter:site&quot; content=&quot;@handle&quot; /&gt;
+&lt;meta name=&quot;twitter:title&quot; content=&quot;&quot; /&gt;
+&lt;meta name=&quot;twitter:description&quot; content=&quot;&quot; /&gt;
+&lt;meta name=&quot;twitter:creator&quot; content=&quot;@handle&quot; /&gt;
+&lt;meta name=&quot;twitter:image:src&quot; content=&quot;&quot; /&gt;
+&lt;meta property=&quot;og:title&quot; content=&quot;&quot; /&gt;
+&lt;meta property=&quot;og:type&quot; content=&quot;article&quot; /&gt;
+&lt;meta property=&quot;og:url&quot; content=&quot;&quot; /&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot;&quot; /&gt;
+&lt;meta property=&quot;og:description&quot; content=&quot;&quot; /&gt;
+&lt;meta property=&quot;og:site_name&quot; content=&quot;&quot; /&gt;
+</pre>
+        </div>
+        
+        
+    </div>
+    
+</section>
+    
+<section id="content-grid" class="demo-section">
+
+    <h1 class="demo-title">Grid</h1>
+    <p class="demo-details">Based on a 12 column system, this syntax will enable quick, responsive grid development.</p>
+    <ul>
+        <li><code>col-</code> - column</li>
+        <li><code>-d_{1-12}</code> - desktop</li>
+        <li><code>-t_{1-12}</code> - tablet</li>
+        <li><code>-s_{1-12}</code> - mobile</li>
+    </ul>
+
+    <div class="row">
+        <div class="col-d_12-t_12-s_12 demo-eg demo-grid">
+            <div class="row">
+                <div class="col-d_6-t_6-s_12">6</div>
+                <div class="col-d_6-t_6-s_12">6</div>
+            </div>
+            <div class="row">
+                <div class="col-d_3-t_6-s_12">3</div>
+                <div class="col-d_3-t_6-s_12">3</div>
+                <div class="col-d_3-t_6-s_12">3</div>
+                <div class="col-d_3-t_6-s_12">3</div>
+            </div>
+            <div class="row">
+                <div class="col-d_4-t_4-s_12">4</div>
+                <div class="col-d_4-t_4-s_12">4</div>
+                <div class="col-d_4-t_4-s_12">4</div>
+            </div>
+        </div>
+        <div class="col-d_12-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Grid --&gt;
+&lt;div class="row"&gt;
+    &lt;!-- Desktop: 50/50 Tablet: 50/50 Mobile: 100 --&gt;
+    &lt;div class="col-d_6-t_6-s_12"&gt;6&lt;/div&gt;
+    &lt;div class="col-d_6-t_6-s_12"&gt;6&lt;/div&gt;
+    &lt;!-- Desktop: 25/25/25/25 Tablet: 50/50 Mobile: 100 --&gt;
+    &lt;div class="col-d_3-t_6-s_12"&gt;3&lt;/div&gt;
+    &lt;div class="col-d_3-t_6-s_12"&gt;3&lt;/div&gt;
+    &lt;div class="col-d_3-t_6-s_12"&gt;3&lt;/div&gt;
+    &lt;div class="col-d_3-t_6-s_12"&gt;3&lt;/div&gt;
+    &lt;!-- Desktop: 33/33/33 Tablet: 33/33/33 Mobile: 100 --&gt;
+    &lt;div class="col-d_4-t_4-s_12"&gt;4&lt;/div&gt;
+    &lt;div class="col-d_4-t_4-s_12"&gt;4&lt;/div&gt;
+    &lt;div class="col-d_4-t_4-s_12"&gt;4&lt;/div&gt;
+&lt;/div&gt;
+</pre>            
+        </div>
+    </div>
+    <!-- / Grid -->
+    
+</section>
+<!-- / Grid -->
+      
+<section id="content-typography" class="demo-section">
+    
+    <h1 class="demo-title">Typography</h1>
+    <p class="demo-details">Ut eos sint vocibus necessitatibus.</p>
+
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Headings</h2>
+            <h1>Header 1</h1>
+            <h2>Header 2</h2>
+            <h3>Header 3</h3>
+            <h4>Header 4</h4>
+            <h5>Header 5</h5>
+            <h6>Header 6</h6>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Headers --&gt;
+&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h3&gt;Header 3&lt;/h3&gt;
+&lt;h4&gt;Header 4&lt;/h4&gt;
+&lt;h5&gt;Header 5&lt;/h5&gt;
+&lt;h6&gt;Header 6&lt;/h6&gt; 
+</pre>
+        </div>
+    </div>
+    <!-- / Headings -->
+    
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Paragraphs</h2>
+            <p>Eam dicunt maiestatis te, ei vel cibo viris. An sed perpetua conceptam contentiones, id sed assum periculis deterruisset. Usto error est cu, ea sit tation adipisci. Usu case soluta oblique ad.</p>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Paragraphs --&gt;
+&lt;p&gt;Eam dicunt maiestatis te, ei vel cibo viris. An sed perpetua conceptam contentiones, id sed assum periculis deterruisset. Usto error est cu, ea sit tation adipisci. Usu case soluta oblique ad.&lt;/p&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Paragraphs -->
+    
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Blockquote</h2>
+            <blockquote><p>“Ooh - a blockquote! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.”</p></blockquote>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Blockquote --&gt;
+&lt;blockquote&gt;&lt;p&gt;“Ooh - a blockquote! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.”&lt;/p&gt;&lt;/blockquote&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Blockquote -->
+    
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Styles</h2>
+            <p>Sea no <strong>strong</strong> quod labitur, mea an <em>italic</em> explicari consectetuer, altera definitiones ut mel. In eam possim <a href="#">link</a> equidem assentior, mazim vitae <u>underline</u> antiopam cum in. Quo <s>strikethrough</s>  iudico nonumes te, cu brute repudiandae sea. Ex <code>code</code> vidit idque his.</p>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Styles --&gt;
+&lt;strong&gt;strong&lt;/strong&gt;
+&lt;em&gt;italic&lt;/em&gt;
+&lt;a&gt;link&lt;/a&gt;
+&lt;u&gt;underlined&lt;/u&gt;
+&lt;s&gt;strikethrough&lt;/s&gt;
+&lt;code&gt;code&lt;/code&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Styles -->
+
+</section>
+<!-- / Typography -->
+    
+<section id="content-lists" class="demo-section">
+
+    <h1 class="demo-title">Lists</h1>
+    <p class="demo-details">Ut eos sint vocibus necessitatibus.</p>
+
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Unordered</h2>
+            <ul>
+                <li>This is a list item</li>
+                <li>So is this</li>
+                <li>Make sure to style list items to:
+                    <ul>
+                        <li>Not forgetting child list items</li>
+                        <li>Not forgetting child list items</li>
+                        <li><a href="#">Not forgetting child list items</a></li>
+                        <li>Not forgetting child list items</li>
+                    </ul>
+                </li>
+                <li>A couple more..</li>
+                <li>..Top level list items</li>
+            </ul>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Unordered --&gt;
+&lt;ul&gt;
+&lt;li&gt;This is a list item&lt;/li&gt;
+&lt;li&gt;So is this&lt;/li&gt;
+&lt;li&gt;Make sure to style list items to:
+    &lt;ul&gt;
+        &lt;li&gt;Child list items&lt;/li&gt;
+        &lt;li&gt;Child list items&lt;/li&gt;
+        &lt;li&gt;Child list items&lt;/li&gt;
+        &lt;li&gt;Child list items&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;A couple more..&lt;/li&gt;
+&lt;li&gt;..Top level list items&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Unordered -->
+
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Ordered</h2>
+            <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Aliquam tincidunt mauris eu risus
+                    <ol>
+                        <li>Consectetuer adipiscing elit</li>
+                        <li>Aliquam tincidunt mauris eu risus</li>
+                    </ol>
+                </li>
+                <li>Mauris eu risus</li>
+            </ol>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Ordered --&gt;
+&lt;ol&gt;
+    &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+    &lt;li&gt;Aliquam tincidunt mauris eu risus
+        &lt;ol&gt;
+            &lt;li&gt;Consectetuer adipiscing elit&lt;/li&gt;
+            &lt;li&gt;Aliquam tincidunt&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Mauris eu risus&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Ordered -->
+
+</section>
+<!-- / Lists -->
+    
+<section id="content-tables" class="demo-section">
+
+    <h1 class="demo-title">Tables</h1>
+    <p class="demo-details">Ut eos sint vocibus necessitatibus.</p>
+
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Basic</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bob Smith</td>
+                        <td>24</td>
+                        <td>Birmingham</td>
+                    </tr>
+                    <tr>
+                        <td>Joe Bloggs</td>
+                        <td>26</td>
+                        <td>Leicester</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Name</td>
+                        <td>Age</td>
+                        <td>Location</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Basic --&gt;
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;Location&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Bob Smith&lt;/td&gt;
+            &lt;td&gt;24&lt;/td&gt;
+            &lt;td&gt;Birmingham&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Joe Bloggs&lt;/td&gt;
+            &lt;td&gt;26&lt;/td&gt;
+            &lt;td&gt;Leicester&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Basic -->
+    
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Striped</h2>
+            <table class="table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bob Smith</td>
+                        <td>24</td>
+                        <td>Birmingham</td>
+                    </tr>
+                    <tr>
+                        <td>Joe Bloggs</td>
+                        <td>26</td>
+                        <td>Leicester</td>
+                    </tr>
+                    <tr>
+                        <td>Sarah Jones</td>
+                        <td>22</td>
+                        <td>Nottingham</td>
+                    </tr>
+                    <tr>
+                        <td>Chloe Roberts</td>
+                        <td>25</td>
+                        <td>Manchester</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Striped --&gt;
+&lt;table class=&quot;table-striped&quot;&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;Location&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Bob Smith&lt;/td&gt;
+            &lt;td&gt;24&lt;/td&gt;
+            &lt;td&gt;Birmingham&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Joe Bloggs&lt;/td&gt;
+            &lt;td&gt;26&lt;/td&gt;
+            &lt;td&gt;Leicester&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Sarah Jones&lt;/td&gt;
+            &lt;td&gt;22&lt;/td&gt;
+            &lt;td&gt;Nottingham&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Chloe Roberts&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+            &lt;td&gt;Manchester&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Basic -->
+    
+</section>
+<!-- /Tables -->
+
+<section id="content-forms" class="demo-section">
+    
+    <h1 class="demo-title">Forms</h1>
+    <p class="demo-details">Ut eos sint vocibus necessitatibus.</p>
+    
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Inputs</h2>
+            <input type="text" name="" id="" placeholder="text" />
+            <input type="email" name="" id="" value="email@email.com" />
+            <input type="password" name="" id="" value="password" />
+            <input type="search" name="" id="" placeholder="Search..." />
+            <input type="tel" name="" id="" value="07711223344" />
+            <input type="url" name="" id="" value="http://google.com/" />
+            <input type="number" name="" id="" value="3" />
+            <input type="date" name="" id="" value="2010-05-17" min="1979-12-31" />
+            <input type="time" name="" id="" value="13:02" />
+            <input type="range" name="" id="" min="0" max="10" value="" />        
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Inputs --&gt;
+&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;text&quot; /&gt;
+&lt;input type=&quot;email&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;email@email.com&quot; /&gt;
+&lt;input type=&quot;password&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;password&quot; /&gt;
+&lt;input type=&quot;search&quot; name=&quot;&quot; id=&quot;&quot; placeholder=&quot;Search...&quot; /&gt;
+&lt;input type=&quot;tel&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;07711223344&quot; /&gt;
+&lt;input type=&quot;url&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;http://google.com/&quot; /&gt;
+&lt;input type=&quot;number&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;3&quot; /&gt;
+&lt;input type=&quot;date&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;2010-05-17&quot; min=&quot;1979-12-31&quot; /&gt;
+&lt;input type=&quot;time&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;13:02&quot; /&gt;
+&lt;input type=&quot;range&quot; name=&quot;&quot; id=&quot;&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;&quot; /&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Inputs -->
+    
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Disabled</h2>
+            <input type="text" name="" id="" placeholder="text" disabled />
+            <br /><br />         
+            <h2 class="demo-subtitle">Readonly</h2>
+            <input type="text" name="" id="" placeholder="text" readonly />
+            <br /><br />   
+            <h2 class="demo-subtitle">Required</h2>
+            <input type="text" name="" id="" placeholder="text" required />
+            
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Disabled --&gt;
+&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;&quot; placeholder=&quot;text&quot; disabled /&gt;
+
+&lt;!-- Readonly --&gt;
+&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;&quot; placeholder=&quot;text&quot; readonly /&gt;
+
+&lt;!-- Required --&gt;
+&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;&quot; placeholder=&quot;text&quot; required /&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Disabled -->
+    
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Select</h2>
+            <select name="" id="">
+                <option>Please choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Select --&gt;
+&lt;select name=&quot;&quot; id=&quot;&quot;&gt; 
+    &lt;option&gt;Please choose...&lt;/option&gt; 
+    &lt;option value=&quot;1&quot;&gt;1&lt;/option&gt; 
+    &lt;option value=&quot;2&quot;&gt;2&lt;/option&gt; 
+    &lt;option value=&quot;3&quot;&gt;3&lt;/option&gt; 
+&lt;/select&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Select -->
+    
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Textarea</h2>
+            <textarea name="name" id="name" rows="5">Dicat fabulas gubergren ad mei, nec indoctum accusamus torquatos no. Zril consulatu elaboraret mea eu, aeque laudem definitionem vis at, eam et verterem mandamus. </textarea>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Textarea --&gt;
+&lt;textarea name=&quot;name&quot; id=&quot;name&quot; rows=&quot;5&quot;&gt;Dicat fabulas gubergren ad mei, nec indoctum accusamus torquatos no. Zril consulatu elaboraret mea eu, aeque laudem definitionem vis at, eam et verterem mandamus. &lt;/textarea&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Textarea -->
+    
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Radio</h2>
+            <input type="radio" name="choice-group" id="choice-1" value="choice-1" /><label for="choice-1"><span><i class="fa fa-check"></i></span>Choice 1</label>
+            <input type="radio" name="choice-group" id="choice-2" value="choice-2" checked /><label for="choice-2"><span><i class="fa fa-check"></i></span>Choice 2</label>   
+            <input type="radio" name="choice-group" id="choice-3" value="choice-3" /><label for="choice-3"><span><i class="fa fa-check"></i></span>Choice 3</label>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Radio --&gt;
+&lt;input type=&quot;radio&quot; name=&quot;choice-group&quot; id=&quot;choice-1&quot; value=&quot;choice-1&quot; /&gt;
+&lt;label for=&quot;choice-1&quot;&gt;&lt;span&gt;&lt;/span&gt;Choice 1&lt;/label&gt; 
+&lt;input type=&quot;radio&quot; name=&quot;choice-group&quot; id=&quot;choice-2&quot; value=&quot;choice-2&quot; checked /&gt;&lt;label for=&quot;choice-2&quot;&gt;&lt;span&gt;&lt;/span&gt;Choice 2&lt;/label&gt; 
+&lt;input type=&quot;radio&quot; name=&quot;choice-group&quot; id=&quot;choice-3&quot; value=&quot;choice-3&quot; /&gt;&lt;label for=&quot;choice-3&quot;&gt;&lt;span&gt;&lt;/span&gt;Choice 3&lt;/label&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Radio -->
+    
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Checkboxes</h2>
+            <input type="checkbox" name="chk-group" id="chk-1" value="choice-1" /><label for="chk-1"><span><i class="fa fa-check"></i></span>Option 1</label>
+            <input type="checkbox" name="chk-group" id="chk-2" value="choice-2" checked /><label for="chk-2"><span><i class="fa fa-check"></i></span>Option 2</label>   
+            <input type="checkbox" name="chk-group" id="chk-3" value="choice-2" checked /><label for="chk-3"><span><i class="fa fa-check"></i></span>Option 3</label>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Checkboxes --&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;chk-group&quot; id=&quot;chk-1&quot; value=&quot;choice-1&quot; /&gt;&lt;label for=&quot;chk-1&quot;&gt;&lt;span&gt;&lt;/span&gt;Option 1&lt;/label&gt; 
+&lt;input type=&quot;checkbox&quot; name=&quot;chk-group&quot; id=&quot;chk-2&quot; value=&quot;choice-2&quot; checked /&gt;&lt;label for=&quot;chk-2&quot;&gt;&lt;span&gt;&lt;/span&gt;Option 2&lt;/label&gt; 
+&lt;input type=&quot;checkbox&quot; name=&quot;chk-group&quot; id=&quot;chk-3&quot; value=&quot;choice-2&quot; checked /&gt;&lt;label for=&quot;chk-3&quot;&gt;&lt;span&gt;&lt;/span&gt;Option 3&lt;/label&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Checkboxes -->
+    
+
+</section>
+<!-- / Forms -->
+    
+    <section id="content-buttons" class="demo-section">
+
+    <h1 class="demo-title">Buttons</h1>
+    <p class="demo-details">Ut eos sint vocibus necessitatibus.</p>
+
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Basic</h2>
+            <input type="button" name="" id="" value="Button" />
+            <input type="reset" name="" id="" value="Reset" />
+            <input type="submit" name="" id="" value="Submit" />
+            <button name="" id="">Button</button>
+            <a href="#" class="btn">Link</a>
+            <br /><br />
+            <h2 class="demo-subtitle">Disabled</h2>
+            <a href="#" class="btn disabled">Link</a>
+            <input type="submit" name="" id="" class="" disabled value="Submit" />
+            <br /><br />
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Basic --&gt;
+&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;Button&quot; /&gt;
+&lt;input type=&quot;reset&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;Reset&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;&quot; id=&quot;&quot; value=&quot;Submit&quot; /&gt;
+&lt;button name=&quot;&quot; id=&quot;&quot;&gt;Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Link&lt;/a&gt;
+
+&lt;!-- Disabled --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn disabled&quot;&gt;Link&lt;/a&gt;
+&lt;input type=&quot;submit&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;&quot; disabled value=&quot;Submit&quot; /&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Basic -->
+        
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Sizes</h2>
+            <h3 class="demo-subsubtitle">Larger</h3>
+            <input type="button" name="" id="" class="lrg" value="Button" />
+            <input type="reset" name="" id="" class="lrg" value="Reset" />
+            <input type="submit" name="" id="" class="lrg" value="Submit" />
+            <button name="" id="" class="lrg">Button</button>
+            <a href="#" class="btn lrg">Link</a>
+            <br /><br />
+            <h3 class="demo-subsubtitle">Smaller</h3>
+            <input type="button" name="" id="" class="sml" value="Button" />
+            <input type="reset" name="" id="" class="sml" value="Reset" />
+            <input type="submit" name="" id="" class="sml" value="Submit" />
+            <button name="" id="" class="sml">Button</button>
+            <a href="#" class="btn sml">Link</a>
+            <br /><br />
+            <h3 class="demo-subsubtitle">Full</h3>
+            <input type="button" name="" id="" class="full" value="Button" />
+            <input type="reset" name="" id="" class="full" value="Reset" />
+            <input type="submit" name="" id="" class="full" value="Submit" />
+            <button name="" id="" class="full">Button</button>
+            <a href="#" class="btn full">Link</a>
+            <br /><br />
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Larger --&gt;
+&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;lrg&quot; value=&quot;Button&quot; /&gt;
+&lt;input type=&quot;reset&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;lrg&quot; value=&quot;Reset&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;lrg&quot; value=&quot;Submit&quot; /&gt;
+&lt;button name=&quot;&quot; id=&quot;&quot; class=&quot;lrg&quot;&gt;Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn lrg&quot;&gt;Link&lt;/a&gt;
+
+&lt;!-- Smaller --&gt;
+&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;sml&quot; value=&quot;Button&quot; /&gt;
+&lt;input type=&quot;reset&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;sml&quot; value=&quot;Reset&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;sml&quot; value=&quot;Submit&quot; /&gt;
+&lt;button name=&quot;&quot; id=&quot;&quot; class=&quot;sml&quot;&gt;Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn sml&quot;&gt;Link&lt;/a&gt;
+
+&lt;!-- Full --&gt;
+&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;full&quot; value=&quot;Button&quot; /&gt;
+&lt;input type=&quot;reset&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;full&quot; value=&quot;Reset&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;full&quot; value=&quot;Submit&quot; /&gt;
+&lt;button name=&quot;&quot; id=&quot;&quot; class=&quot;full&quot;&gt;Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn full&quot;&gt;Link&lt;/a&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Sizes -->
+        
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Colors</h2>
+            <h3 class="demo-subsubtitle">Primary</h3>
+            <input type="button" name="" id="" class="primary" value="Button" />
+            <input type="reset" name="" id="" class="primary" value="Reset" />
+            <input type="submit" name="" id="" class="primary" value="Submit" />
+            <button name="" id="" class="primary">Button</button>
+            <a href="#" class="btn primary">Link</a>
+            <br /><br />
+            <h3 class="demo-subsubtitle">Secondary</h3>
+            <input type="button" name="" id="" class="secondary" value="Button" />
+            <input type="reset" name="" id="" class="secondary" value="Reset" />
+            <input type="submit" name="" id="" class="secondary" value="Submit" />
+            <button name="" id="" class="secondary">Button</button>
+            <a href="#" class="btn secondary">Link</a>
+            <br /><br />
+            <h3 class="demo-subsubtitle">Tertiary</h3>
+            <input type="button" name="" id="" class="tertiary" value="Button" />
+            <input type="reset" name="" id="" class="tertiary" value="Reset" />
+            <input type="submit" name="" id="" class="tertiary" value="Submit" />
+            <button name="" id="" class="tertiary">Button</button>
+            <a href="#" class="btn tertiary">Link</a>
+            <br /><br />
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Primary --&gt;
+&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;primary&quot; value=&quot;Button&quot; /&gt;
+&lt;input type=&quot;reset&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;primary&quot; value=&quot;Reset&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;primary&quot; value=&quot;Submit&quot; /&gt;
+&lt;button name=&quot;&quot; id=&quot;&quot; class=&quot;primary&quot;&gt;Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn primary&quot;&gt;Link&lt;/a&gt;
+
+&lt;!-- Secondary --&gt;
+&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;secondary&quot; value=&quot;Button&quot; /&gt;
+&lt;input type=&quot;reset&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;secondary&quot; value=&quot;Reset&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;secondary&quot; value=&quot;Submit&quot; /&gt;
+&lt;button name=&quot;&quot; id=&quot;&quot; class=&quot;secondary&quot;&gt;Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn secondary&quot;&gt;Link&lt;/a&gt;
+
+&lt;!-- Tertiary --&gt;
+&lt;input type=&quot;button&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;tertiary&quot; value=&quot;Button&quot; /&gt;
+&lt;input type=&quot;reset&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;tertiary&quot; value=&quot;Reset&quot; /&gt;
+&lt;input type=&quot;submit&quot; name=&quot;&quot; id=&quot;&quot; class=&quot;tertiary&quot; value=&quot;Submit&quot; /&gt;
+&lt;button name=&quot;&quot; id=&quot;&quot; class=&quot;tertiary&quot;&gt;Button&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn tertiary&quot;&gt;Link&lt;/a&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Colors -->
+        
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Icons</h2>
+            <button name="" id="" class="icon icon-left"><i class="fa fa-shopping-basket"></i>View Basket</button>
+            <a href="#" class="btn icon icon-right">Download<i class="fa fa-download"></i></a>
+            <a href="#" class="btn icon icon-right">Proceed<i class="fa fa-arrow-right"></i></a>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- Icons --&gt;
+&lt;button name=&quot;&quot; id=&quot;&quot; class=&quot;icon icon-left&quot;&gt;&lt;i class=&quot;fa fa-shopping-basket&quot;&gt;&lt;/i&gt;View Basket&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn icon icon-right&quot;&gt;Download&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn icon icon-right&quot;&gt;Proceed&lt;i class=&quot;fa fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+</pre>
+        </div>
+    </div>
+    <!-- / Icons -->
+    
+</section>
+<!-- / Buttons -->
+    
+    
+ <section id="content-images" class="demo-section">
+    
+    <h1 class="demo-title">Images</h1>
+    <p class="demo-details">Ut eos sint vocibus necessitatibus.</p>
+
+    <div class="row demo-row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Figure with caption</h2>
+            <figure>
+                <img src="http://placehold.it/800x600.png&text=Image" alt="" />
+                <figcaption>Augue sententiae instructior mei ut. Ut vis ullum accusam comprehensam. <a href="http://www.placehold.it/">Placehold.it</a></figcaption>
+            </figure>
+            
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- 100% Width --&gt;
+
+</pre>
+        </div>
+    </div>
+    <!-- / Figures -->
+     
+     <div class="row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            
+            <h2 class="demo-subtitle">Shapes</h2>
+            <div class="demo-images">
+                <img src="http://placehold.it/150x150.png&text=Image" alt="" class="img-round" />
+                <img src="http://placehold.it/150x150.png&text=Image" class="img-diamond" />
+                <img src="http://placehold.it/150x150.png&text=Image" class="img-triangle" />
+                <img src="http://placehold.it/150x150.png&text=Image" class="img-pentagon" />
+                <img src="http://placehold.it/150x150.png&text=Image" class="img-hexagon" />
+                <img src="http://placehold.it/150x150.png&text=Image" class="img-octagon" />
+            </div>
+            
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;!-- 100% Width --&gt;
+
+</pre>
+        </div>
+     </div>
+
+</section>
+<!-- / Images -->   
+    
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+<script src="lib/jquery-2.1.4.min.js"></script>  
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<script src="lib/jquery.scrollTo.min.js"></script>
+<script src="lib/jquery.waypoints.min.js"></script>
+<script src="lib/socialr.js"></script>
+<script src="js/application.js"></script>   
+    
+</body> 
+</html>

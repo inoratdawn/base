@@ -1,0 +1,55 @@
+// Required
+@import "modules/variables";
+@import "modules/functions";
+@import "modules/mixins";
+
+// Basics
+@import "partials/reset";
+@import "partials/grid";
+@import "partials/social";
+@import "partials/typography";
+//@import "partials/lists";
+@import "partials/buttons";
+@import "partials/forms";
+@import "partials/tables";
+@import "partials/images";
+
+//@import "partials/misc";
+
+
+
+.demo-section {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #EEE;
+    padding: 50px 0;
+    .demo-title {
+        font-size: 1em; 
+        text-transform: uppercase;
+    }
+    .demo-subtitle {
+        font-size: 1em; 
+        margin-bottom: 10px;
+    }
+    .demo-subsubtitle {
+        font-size: 0.8em; 
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .demo-row {
+    }
+    .demo-eg {
+        padding: 10px 40px 40px 0;
+    }
+    .demo-grid {
+        [class*='col-'] {
+            background-color: #EEE;
+        }
+    }
+    .demo-images{
+        img {
+            margin: 20px;
+        }
+    }
+}

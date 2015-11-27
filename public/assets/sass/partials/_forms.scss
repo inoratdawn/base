@@ -1,0 +1,196 @@
+/* Forms */
+form {}
+form hr { visibility: hidden; }
+
+// General
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    max-width: 100%;
+    font-family: $font-body;
+}
+
+// Label
+label {
+}
+
+// Inputs
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="range"] {
+    width: 100%;
+    outline: none;
+    background: #FFF;
+    border: 2px solid #EEE;
+    border-radius: 3px;
+    color: #adadad;
+    padding: 0.5em;
+    margin-bottom: 5px;
+    //-webkit-appearance: none;
+    &:hover {
+        border-color: #DDD;
+    }
+    &:focus {
+        border-color: #85B7D9;
+        color: #606060;
+    }
+    &[disabled], &[readonly] {
+        color: #EEE;
+        background-color: #F7F7F7;
+        border-color: #EEE;
+        &:hover {
+            border-color: #EEE;
+        }
+    }
+    &[required] {
+        background-image: radial-gradient(red 20%, transparent 25%);
+        background-size: 1em 1em;
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+
+// Textarea
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    width: 100%;
+    padding: 0.5em;
+    background: #FFF;
+    border: 2px solid #EEE;
+    border-radius: 2px;
+    color: #CCC;
+    outline: none;
+    line-height: 2em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &:hover {
+        border-color: #DDD;
+    }
+    &:focus {
+        border-color: #85B7D9;
+        color: #606060;
+    }
+    &[disabled], &[readonly] {
+        color: #CCC;
+        background-color: #F7F7F7;
+        border-color: #EEE;
+        &:hover {
+            border-color: #EEE;
+        }
+    }
+}
+
+// Select
+select {
+	width: 100%;
+	padding: 0.5em;
+	background: #FFF;
+    border: 2px solid #EEE;
+	border-radius: 3px;
+	outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	&:hover {
+	}
+	&:focus {
+        border-color: #85B7D9;
+        color: #606060;
+    }
+}
+
+// Radio
+input[type="radio"] {
+    display: none;
+    &+ label {
+        width: 100%;
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        
+    }
+    &+ label span {
+        display:inline-block;
+        vertical-align: middle;
+        width: 18px;
+        height: 18px;
+        background-color: #FFF;
+        border-radius: 30px;
+        border: 2px solid #000;
+        margin-right: 8px;
+        margin-top: -1px;
+        i {
+            display: none;
+        }
+    }
+    &:checked + label span {
+        i {
+            display: block;
+            width: 100%; 
+            font-size: 0.7em;
+            text-align: center;
+            margin-top: 2px;
+        }
+    }
+}
+
+// Checkboxes
+input[type="checkbox"] {
+    display: none;
+    &+ label {
+        width: 100%;
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        
+    }
+    &+ label span {
+        display:inline-block;
+        vertical-align: middle;
+        width: 18px;
+        height: 18px;
+        background-color: #FFF;
+        border: 2px solid #000;
+        margin-right: 8px;
+        margin-top: -1px;
+        i {
+            display: none;
+        }
+    }
+    &:checked + label span {
+        i {
+            display: block;
+            width: 100%; 
+            font-size: 0.7em;
+            text-align: center;
+            margin-top: 2px;
+        }
+    }
+}
+
+
+
+// Validation
+
+/*.success, :valid {
+    //background-color: #F2FFF4;
+}
+
+.error, :invalid {
+    background-color: #FFF3F1;
+}*/

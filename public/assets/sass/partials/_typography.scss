@@ -1,0 +1,91 @@
+/* Typography */
+body{
+    font-family: $font-body;
+    font-size: 1em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #222;
+    font-family: $font-headers;
+    font-weight: bold;
+    margin: 0; padding: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+
+
+
+a {
+    
+}
+
+a, a:visited{
+    color: #2c5c99;
+}
+
+
+blockquote{
+    
+    margin: 0 0 0 1.5em;
+    padding: 0 1.5em 0 0; 
+    font-style: italic;
+    
+    p {
+        border-left: 2px solid #eee; 
+        padding: 0.75em 1.5em;
+    }
+    
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 0.7em;
+    white-space: pre;
+    word-wrap: break-word;
+}
+
+pre.prettyprint {
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    padding: 1.4em!important;
+    border: 1px solid #EEE!important;
+    border-radius: 5px;
+    line-height: 1.6em;
+    
+    .com {
+        color: #999;
+    }
+}
+
+code {
+    padding: .2rem .5rem;
+    margin: 0 .2rem;
+    font-size: 80%;
+    white-space: nowrap;
+    background: #F7F7F7;
+    border: 1px solid #EEE;
+    border-radius: 4px;
+}
