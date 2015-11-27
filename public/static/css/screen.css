@@ -463,19 +463,20 @@ th {
     color: #FFF;
     display: inline-block;
     vertical-align: middle;
-    line-height: 30px;
+    line-height: 36px;
     text-decoration: none;
-    height: 30px;
-    font-size: 0.8em;
-    padding: 0; }
+    height: 32px;
+    font-size: 1em;
+    padding: 0;
+    font-weight: 100; }
     .socialr_each a:visited {
       color: #FFF; }
     .socialr_each a i {
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
       text-align: center;
-      font-size: 1.4em;
+      font-size: 1.2em;
       float: left; }
     .socialr_each a span {
       padding: 0 10px; }
@@ -754,7 +755,7 @@ input[type="submit"] {
   input[type="button"].icon i,
   input[type="reset"].icon i,
   input[type="submit"].icon i {
-    margin: 0 20px; }
+    margin: 3px 20px 0 20px; }
   button.icon-left i,
   a.btn.icon-left i,
   input[type="button"].icon-left i,
@@ -1018,6 +1019,14 @@ table {
 
 img {
   max-width: 100%; }
+  img.left {
+    float: left;
+    margin: 20px;
+    margin-left: -20px; }
+  img.right {
+    float: right;
+    margin: 20px;
+    margin-right: -20px; }
 
 .img-round {
   -webkit-clip-path: circle(50% at 50% 50%);
@@ -1051,6 +1060,64 @@ figure {
     border-top: 1px solid #EEE;
     padding: 10px;
     text-align: center; }
+
+.nav {
+  border: 2px solid #000;
+  border-left: 0;
+  border-right: 0;
+  clear: both;
+  height: 46px; }
+  .nav ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0; }
+    .nav ul li {
+      position: relative;
+      float: left;
+      margin: 0;
+      padding: 0; }
+      .nav ul li:hover {
+        background: #000;
+        color: #FFF; }
+        .nav ul li:hover a {
+          color: #FFF; }
+      .nav ul li:hover > ul {
+        display: block; }
+      .nav ul li a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+        line-height: 44px;
+        padding: 0 15px; }
+  .nav-dropdown {
+    position: relative; }
+    .nav-dropdown a {
+      padding: 0 30px 0 15px !important; }
+    .nav-dropdown:before {
+      content: "\f0d7";
+      font-family: FontAwesome;
+      position: absolute;
+      top: 0;
+      right: 15px;
+      line-height: 44px;
+      font-size: 0.8em; }
+  .nav-current {
+    font-weight: 700; }
+  .nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    padding: 0; }
+    .nav ul ul li {
+      float: none;
+      width: 200px; }
+  .nav ul ul ul {
+    top: 0;
+    left: 100%; }
 
 .demo-section {
   max-width: 80%;

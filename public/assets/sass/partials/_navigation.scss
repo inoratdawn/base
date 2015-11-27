@@ -1,0 +1,89 @@
+.nav {
+    
+    border: 2px solid #000;
+    border-left: 0; 
+    border-right: 0;
+    clear: both;
+    height: 46px;
+    
+    ul { 
+        list-style: none;
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+        
+        li {
+            position: relative;
+            float: left;
+            margin: 0;
+            padding: 0;
+
+            &:hover {
+                background: $black;
+                color: $white;
+                a {
+                    color: $white;
+                }
+            }
+            
+            &:hover > ul {
+                display: block;
+            }
+            
+            a {
+                display: block;
+                color: $black;
+                text-decoration: none;
+                line-height: 44px;
+                padding: 0 15px;
+            }
+
+        }
+        
+        
+
+    }
+    
+    &-dropdown {
+        position: relative;
+        a {
+            padding: 0 30px 0 15px!important;
+        }
+        &:before {
+            content: "\f0d7";
+            font-family: FontAwesome;
+            position: absolute;
+            top: 0;
+            right: 15px;
+            line-height: 44px;
+            font-size: 0.8em;
+        }
+    }
+
+    &-current {
+        font-weight: 700;
+    }
+    
+    
+    ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: $black;
+        padding: 0;
+        
+        li {
+            float: none;
+            width: 200px;
+        }
+    }
+    
+    ul ul ul {
+        top: 0;
+        left: 100%;
+    }
+
+}
+
