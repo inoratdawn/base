@@ -21,10 +21,8 @@
         <link rel="stylesheet" type="text/css" media="all" href="static/css/screen.css" />
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,300italic,400italic,700italic,600italic,800,800italic' rel='stylesheet' type='text/css' />
         <link href='https://fonts.googleapis.com/css?family=Hind:400,300,500,600,700' rel='stylesheet' type='text/css'>
-        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        
-        
+
     </head>
 <body>
  
@@ -41,59 +39,15 @@
             <li><a href="#content-tables">Tables</a></li>
             <li><a href="#content-forms">Forms</a></li>
             <li><a href="#content-buttons">Buttons</a></li>
+            <li><a href="#content-images">Images</a></li>
+            <li><a href="#content-social">Social</a></li>
         </ul>
     </nav>
 
 </header>    
  
-<section id="content-grid" class="demo-section">
-
-    <h1 class="demo-title">Social Sharing</h1>
-    <p class="demo-details"></p>
+ 
     
-    <div class="row">
-        <div class="col-d_6-t_12-s_12 demo-eg">
-            <div id="socialr"></div>
-            <br />
-            <div id="socialr_2"></div>
-            <br />
-            <div id="socialr_3"></div>
-        </div>
-        <div class="col-d_6-t_12-s_12">
-<pre class="prettyprint">
-&lt;div id="socialr"&gt;&lt;/div&gt;
-
-$("#socialr").socialr({
-    title: "BASE.DEV",
-    url: "http://google.com/",
-    shares: ['twitter','facebook','linkedin','googleplus'],
-    via: "inoratdawn",
-    hashtags: "base,dev,localhost",
-    icon: true,
-    count: true,
-    label: false
-});
-
-&lt;meta name=&quot;description&quot; content=&quot;Base.dev&quot; /&gt;
-&lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot; /&gt;
-&lt;meta name=&quot;twitter:site&quot; content=&quot;@handle&quot; /&gt;
-&lt;meta name=&quot;twitter:title&quot; content=&quot;&quot; /&gt;
-&lt;meta name=&quot;twitter:description&quot; content=&quot;&quot; /&gt;
-&lt;meta name=&quot;twitter:creator&quot; content=&quot;@handle&quot; /&gt;
-&lt;meta name=&quot;twitter:image:src&quot; content=&quot;&quot; /&gt;
-&lt;meta property=&quot;og:title&quot; content=&quot;&quot; /&gt;
-&lt;meta property=&quot;og:type&quot; content=&quot;article&quot; /&gt;
-&lt;meta property=&quot;og:url&quot; content=&quot;&quot; /&gt;
-&lt;meta property=&quot;og:image&quot; content=&quot;&quot; /&gt;
-&lt;meta property=&quot;og:description&quot; content=&quot;&quot; /&gt;
-&lt;meta property=&quot;og:site_name&quot; content=&quot;&quot; /&gt;
-</pre>
-        </div>
-        
-        
-    </div>
-    
-</section>
     
 <section id="content-grid" class="demo-section">
 
@@ -109,19 +63,19 @@ $("#socialr").socialr({
     <div class="row">
         <div class="col-d_12-t_12-s_12 demo-eg demo-grid">
             <div class="row">
-                <div class="col-d_6-t_6-s_12">6</div>
-                <div class="col-d_6-t_6-s_12">6</div>
+                <div class="col-d_6-t_6-m_12">6</div>
+                <div class="col-d_6-t_6-m_12">6</div>
             </div>
             <div class="row">
-                <div class="col-d_3-t_6-s_12">3</div>
-                <div class="col-d_3-t_6-s_12">3</div>
-                <div class="col-d_3-t_6-s_12">3</div>
-                <div class="col-d_3-t_6-s_12">3</div>
+                <div class="col-d_3-t_6-m_3">3</div>
+                <div class="col-d_3-t_6-m_3">3</div>
+                <div class="col-d_3-t_6-m_3">3</div>
+                <div class="col-d_3-t_6-m_3">3</div>
             </div>
             <div class="row">
-                <div class="col-d_4-t_4-s_12">4</div>
-                <div class="col-d_4-t_4-s_12">4</div>
-                <div class="col-d_4-t_4-s_12">4</div>
+                <div class="col-d_4-t_4-m_12">4</div>
+                <div class="col-d_4-t_4-m_12">4</div>
+                <div class="col-d_4-t_4-m_12">4</div>
             </div>
         </div>
         <div class="col-d_12-t_12-s_12">
@@ -129,17 +83,17 @@ $("#socialr").socialr({
 &lt;!-- Grid --&gt;
 &lt;div class="row"&gt;
     &lt;!-- Desktop: 50/50 Tablet: 50/50 Mobile: 100 --&gt;
-    &lt;div class="col-d_6-t_6-s_12"&gt;6&lt;/div&gt;
-    &lt;div class="col-d_6-t_6-s_12"&gt;6&lt;/div&gt;
+    &lt;div class="col-d_6-t_6-m_12"&gt;6&lt;/div&gt;
+    &lt;div class="col-d_6-t_6-m_12"&gt;6&lt;/div&gt;
     &lt;!-- Desktop: 25/25/25/25 Tablet: 50/50 Mobile: 100 --&gt;
-    &lt;div class="col-d_3-t_6-s_12"&gt;3&lt;/div&gt;
-    &lt;div class="col-d_3-t_6-s_12"&gt;3&lt;/div&gt;
-    &lt;div class="col-d_3-t_6-s_12"&gt;3&lt;/div&gt;
-    &lt;div class="col-d_3-t_6-s_12"&gt;3&lt;/div&gt;
+    &lt;div class="col-d_3-t_6-m_12"&gt;3&lt;/div&gt;
+    &lt;div class="col-d_3-t_6-m_12"&gt;3&lt;/div&gt;
+    &lt;div class="col-d_3-t_6-m_12"&gt;3&lt;/div&gt;
+    &lt;div class="col-d_3-t_6-m_12"&gt;3&lt;/div&gt;
     &lt;!-- Desktop: 33/33/33 Tablet: 33/33/33 Mobile: 100 --&gt;
-    &lt;div class="col-d_4-t_4-s_12"&gt;4&lt;/div&gt;
-    &lt;div class="col-d_4-t_4-s_12"&gt;4&lt;/div&gt;
-    &lt;div class="col-d_4-t_4-s_12"&gt;4&lt;/div&gt;
+    &lt;div class="col-d_4-t_4-m_12"&gt;4&lt;/div&gt;
+    &lt;div class="col-d_4-t_4-m_12"&gt;4&lt;/div&gt;
+    &lt;div class="col-d_4-t_4-m_12"&gt;4&lt;/div&gt;
 &lt;/div&gt;
 </pre>            
         </div>
@@ -368,6 +322,13 @@ $("#socialr").socialr({
             &lt;td&gt;Leicester&lt;/td&gt;
         &lt;/tr&gt;
     &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Name&lt;/td&gt;
+            &lt;td&gt;Age&lt;/td&gt;
+            &lt;td&gt;Location&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
 &lt;/table&gt;
 </pre>
         </div>
@@ -768,12 +729,14 @@ $("#socialr").socialr({
                 <img src="http://placehold.it/800x600.png&text=Image" alt="" />
                 <figcaption>Augue sententiae instructior mei ut. Ut vis ullum accusam comprehensam. <a href="http://www.placehold.it/">Placehold.it</a></figcaption>
             </figure>
-            
         </div>
         <div class="col-d_6-t_12-s_12">
 <pre class="prettyprint">
-&lt;!-- 100% Width --&gt;
-
+&lt;!-- Figure with caption --&gt;
+&lt;figure&gt;
+    &lt;img src=&quot;http://placehold.it/800x600.png&amp;text=Image&quot; alt=&quot;&quot; /&gt;
+    &lt;figcaption&gt;Augue sententiae instructior mei ut. Ut vis ullum accusam comprehensam. &lt;a href=&quot;http://www.placehold.it/&quot;&gt;Placehold.it&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
 </pre>
         </div>
     </div>
@@ -784,7 +747,7 @@ $("#socialr").socialr({
             
             <h2 class="demo-subtitle">Shapes</h2>
             <div class="demo-images">
-                <img src="http://placehold.it/150x150.png&text=Image" alt="" class="img-round" />
+                <img src="http://placehold.it/150x150.png&text=Image" class="img-round" />
                 <img src="http://placehold.it/150x150.png&text=Image" class="img-diamond" />
                 <img src="http://placehold.it/150x150.png&text=Image" class="img-triangle" />
                 <img src="http://placehold.it/150x150.png&text=Image" class="img-pentagon" />
@@ -795,14 +758,67 @@ $("#socialr").socialr({
         </div>
         <div class="col-d_6-t_12-s_12">
 <pre class="prettyprint">
-&lt;!-- 100% Width --&gt;
-
+&lt;!-- Shapes --&gt;
+&lt;img src=&quot;http://placehold.it/150x150.png&amp;text=Image&quot; class=&quot;img-round&quot; /&gt;
+&lt;img src=&quot;http://placehold.it/150x150.png&amp;text=Image&quot; class=&quot;img-diamond&quot; /&gt;
+&lt;img src=&quot;http://placehold.it/150x150.png&amp;text=Image&quot; class=&quot;img-triangle&quot; /&gt;
+&lt;img src=&quot;http://placehold.it/150x150.png&amp;text=Image&quot; class=&quot;img-pentagon&quot; /&gt;
+&lt;img src=&quot;http://placehold.it/150x150.png&amp;text=Image&quot; class=&quot;img-hexagon&quot; /&gt;
+&lt;img src=&quot;http://placehold.it/150x150.png&amp;text=Image&quot; class=&quot;img-octagon&quot; /&gt;
 </pre>
         </div>
      </div>
 
 </section>
 <!-- / Images -->   
+    
+<section id="content-social" class="demo-section">
+
+    <h1 class="demo-title">Social Share Buttons</h1>
+    <p class="demo-details"></p>
+    
+    <div class="row">
+        <div class="col-d_6-t_12-s_12 demo-eg">
+            <div id="socialr"></div>
+            <br />
+            <div id="socialr_2"></div>
+            <br />
+            <div id="socialr_3"></div>
+        </div>
+        <div class="col-d_6-t_12-s_12">
+<pre class="prettyprint">
+&lt;div id="socialr"&gt;&lt;/div&gt;
+
+$("#socialr").socialr({
+    title: "BASE.DEV",
+    url: "http://google.com/",
+    shares: ['twitter','facebook','linkedin','googleplus'],
+    via: "inoratdawn",
+    hashtags: "base,dev,localhost",
+    icon: true,
+    count: true,
+    label: false
+});
+
+&lt;meta name=&quot;description&quot; content=&quot;Base.dev&quot; /&gt;
+&lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot; /&gt;
+&lt;meta name=&quot;twitter:site&quot; content=&quot;@handle&quot; /&gt;
+&lt;meta name=&quot;twitter:title&quot; content=&quot;&quot; /&gt;
+&lt;meta name=&quot;twitter:description&quot; content=&quot;&quot; /&gt;
+&lt;meta name=&quot;twitter:creator&quot; content=&quot;@handle&quot; /&gt;
+&lt;meta name=&quot;twitter:image:src&quot; content=&quot;&quot; /&gt;
+&lt;meta property=&quot;og:title&quot; content=&quot;&quot; /&gt;
+&lt;meta property=&quot;og:type&quot; content=&quot;article&quot; /&gt;
+&lt;meta property=&quot;og:url&quot; content=&quot;&quot; /&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot;&quot; /&gt;
+&lt;meta property=&quot;og:description&quot; content=&quot;&quot; /&gt;
+&lt;meta property=&quot;og:site_name&quot; content=&quot;&quot; /&gt;
+</pre>
+        </div>
+    </div>
+    
+</section>
+<!-- / Social Share Buttons -->      
     
 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
