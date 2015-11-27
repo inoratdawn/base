@@ -6,9 +6,9 @@ input[type="submit"] {
     cursor: pointer;
     border-radius: 0;
     border: 0;
-    border: 2px solid #CCC;
-    background-color: #FFF;
-    color: #CCC;
+    border: 2px solid $lightgrey;
+    background-color: $white;
+    color: $lightgrey;
     font-family: $font-buttons;
     text-transform: uppercase;
     font-size: 0.9em;
@@ -23,17 +23,17 @@ input[type="submit"] {
     &:hover,
     &:focus,
     &:active {
-        border-color: #000;
-        color: #000;
+        border-color: $black;
+        color: $black;
     }
     &[disabled], &.disabled {
-        background: #EEE;
-        color: #CCC;
+        background: lighten($lightgrey, 10%);
+        color: $lightgrey;
         &:hover,
         &:focus,
         &:active {
-            border-color: #CCC;
-            color: #CCC;
+            border-color: $lightgrey;
+            color: $lightgrey;
             cursor: default;
         }
     }
@@ -53,35 +53,35 @@ input[type="submit"] {
     }
 
     &.primary {
-        color: hotpink;
-        border-color: hotpink;
+        color: $primary-color;
+        border-color: $primary-color;
         &:hover,
         &:focus,
         &:active {
-            border-color: darken(hotpink, 10%);
-            color: darken(hotpink, 10%);
+            border-color: darken($primary-color, 10%);
+            color: darken($primary-color, 10%);
         }
     }
     
     &.secondary {
-        color: lightskyblue;
-        border-color: lightskyblue;
+        color: $secondary-color;
+        border-color: $secondary-color;
         &:hover,
         &:focus,
         &:active {
-            border-color: darken(lightskyblue, 10%);
-            color: darken(lightskyblue, 10%);
+            border-color: darken($secondary-color, 10%);
+            color: darken($secondary-color, 10%);
         }
     }
     
     &.tertiary {
-        color: green;
-        border-color: green;
+        color: $tertiary-color;
+        border-color: $tertiary-color;
         &:hover,
         &:focus,
         &:active {
-            border-color: darken(green, 10%);
-            color: darken(green, 10%);
+            border-color: darken($tertiary-color, 10%);
+            color: darken($tertiary-color, 10%);
         }
     }
     

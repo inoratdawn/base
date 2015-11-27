@@ -37,6 +37,9 @@
         margin-bottom: 10px;
         text-transform: uppercase;
     }
+    .demo-heading {
+        margin-bottom: 20px;
+    }
     .demo-row {
     }
     .demo-eg {
@@ -45,6 +48,8 @@
     .demo-grid {
         [class*='col-'] {
             background-color: #EEE;
+            text-align: center;
+            border: 1px solid #DDD;
         }
     }
     .demo-images{

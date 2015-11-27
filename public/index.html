@@ -45,14 +45,13 @@
     </nav>
 
 </header>    
- 
- 
-    
-    
-<section id="content-grid" class="demo-section">
 
-    <h1 class="demo-title">Grid</h1>
-    <p class="demo-details">Based on a 12 column system, this syntax will enable quick, responsive grid development.</p>
+<section id="content-grid" class="demo-section">
+    
+    <header class="demo-heading">
+        <h1 class="demo-title">Grid</h1>
+        <p class="demo-details">Based on a 12 column system, this syntax will enable quick, responsive grid development.</p>
+    </header>
     <ul>
         <li><code>col-</code> - column</li>
         <li><code>-d_{1-12}</code> - desktop</li>
@@ -86,10 +85,10 @@
     &lt;div class="col-d_6-t_6-m_12"&gt;6&lt;/div&gt;
     &lt;div class="col-d_6-t_6-m_12"&gt;6&lt;/div&gt;
     &lt;!-- Desktop: 25/25/25/25 Tablet: 50/50 Mobile: 100 --&gt;
-    &lt;div class="col-d_3-t_6-m_12"&gt;3&lt;/div&gt;
-    &lt;div class="col-d_3-t_6-m_12"&gt;3&lt;/div&gt;
-    &lt;div class="col-d_3-t_6-m_12"&gt;3&lt;/div&gt;
-    &lt;div class="col-d_3-t_6-m_12"&gt;3&lt;/div&gt;
+    &lt;div class="col-d_3-t_6-m_3"&gt;3&lt;/div&gt;
+    &lt;div class="col-d_3-t_6-m_3"&gt;3&lt;/div&gt;
+    &lt;div class="col-d_3-t_6-m_3"&gt;3&lt;/div&gt;
+    &lt;div class="col-d_3-t_6-m_3"&gt;3&lt;/div&gt;
     &lt;!-- Desktop: 33/33/33 Tablet: 33/33/33 Mobile: 100 --&gt;
     &lt;div class="col-d_4-t_4-m_12"&gt;4&lt;/div&gt;
     &lt;div class="col-d_4-t_4-m_12"&gt;4&lt;/div&gt;
@@ -105,8 +104,9 @@
       
 <section id="content-typography" class="demo-section">
     
-    <h1 class="demo-title">Typography</h1>
-    <p class="demo-details">Ut eos sint vocibus necessitatibus.</p>
+    <header class="demo-heading">
+        <h1 class="demo-title">Typography</h1>
+    </header>
 
     <div class="row demo-row">
         <div class="col-d_6-t_12-s_12 demo-eg">
@@ -184,9 +184,10 @@
     
 <section id="content-lists" class="demo-section">
 
-    <h1 class="demo-title">Lists</h1>
-    <p class="demo-details">Ut eos sint vocibus necessitatibus.</p>
-
+    <header class="demo-heading">
+        <h1 class="demo-title">Lists</h1>
+    </header>
+    
     <div class="row demo-row">
         <div class="col-d_6-t_12-s_12 demo-eg">
             <h2 class="demo-subtitle">Unordered</h2>
@@ -264,8 +265,9 @@
     
 <section id="content-tables" class="demo-section">
 
-    <h1 class="demo-title">Tables</h1>
-    <p class="demo-details">Ut eos sint vocibus necessitatibus.</p>
+    <header class="demo-heading">
+        <h1 class="demo-title">Tables</h1>
+    </header>
 
     <div class="row demo-row">
         <div class="col-d_6-t_12-s_12 demo-eg">
@@ -414,8 +416,9 @@
 
 <section id="content-forms" class="demo-section">
     
-    <h1 class="demo-title">Forms</h1>
-    <p class="demo-details">Ut eos sint vocibus necessitatibus.</p>
+    <header class="demo-heading">
+        <h1 class="demo-title">Forms</h1>
+    </header>
     
     <div class="row demo-row">
         <div class="col-d_6-t_12-s_12 demo-eg">
@@ -518,16 +521,15 @@
         <div class="col-d_6-t_12-s_12 demo-eg">
             <h2 class="demo-subtitle">Radio</h2>
             <input type="radio" name="choice-group" id="choice-1" value="choice-1" /><label for="choice-1"><span><i class="fa fa-check"></i></span>Choice 1</label>
-            <input type="radio" name="choice-group" id="choice-2" value="choice-2" checked /><label for="choice-2"><span><i class="fa fa-check"></i></span>Choice 2</label>   
+            <input type="radio" name="choice-group" id="choice-2" value="choice-2" checked /><label for="choice-2"><span><i class="fa fa-check"></i></span>Choice 2</label>  
             <input type="radio" name="choice-group" id="choice-3" value="choice-3" /><label for="choice-3"><span><i class="fa fa-check"></i></span>Choice 3</label>
         </div>
         <div class="col-d_6-t_12-s_12">
 <pre class="prettyprint">
 &lt;!-- Radio --&gt;
-&lt;input type=&quot;radio&quot; name=&quot;choice-group&quot; id=&quot;choice-1&quot; value=&quot;choice-1&quot; /&gt;
-&lt;label for=&quot;choice-1&quot;&gt;&lt;span&gt;&lt;/span&gt;Choice 1&lt;/label&gt; 
-&lt;input type=&quot;radio&quot; name=&quot;choice-group&quot; id=&quot;choice-2&quot; value=&quot;choice-2&quot; checked /&gt;&lt;label for=&quot;choice-2&quot;&gt;&lt;span&gt;&lt;/span&gt;Choice 2&lt;/label&gt; 
-&lt;input type=&quot;radio&quot; name=&quot;choice-group&quot; id=&quot;choice-3&quot; value=&quot;choice-3&quot; /&gt;&lt;label for=&quot;choice-3&quot;&gt;&lt;span&gt;&lt;/span&gt;Choice 3&lt;/label&gt;
+&lt;input type=&quot;radio&quot; name=&quot;choice-group&quot; id=&quot;choice-1&quot; value=&quot;choice-1&quot; /&gt;&lt;label for=&quot;choice-1&quot;&gt;&lt;span&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;Choice 1&lt;/label&gt;
+&lt;input type=&quot;radio&quot; name=&quot;choice-group&quot; id=&quot;choice-2&quot; value=&quot;choice-2&quot; checked /&gt;&lt;label for=&quot;choice-2&quot;&gt;&lt;span&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;Choice 2&lt;/label&gt;  
+&lt;input type=&quot;radio&quot; name=&quot;choice-group&quot; id=&quot;choice-3&quot; value=&quot;choice-3&quot; /&gt;&lt;label for=&quot;choice-3&quot;&gt;&lt;span&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;Choice 3&lt;/label&gt;
 </pre>
         </div>
     </div>
@@ -543,9 +545,9 @@
         <div class="col-d_6-t_12-s_12">
 <pre class="prettyprint">
 &lt;!-- Checkboxes --&gt;
-&lt;input type=&quot;checkbox&quot; name=&quot;chk-group&quot; id=&quot;chk-1&quot; value=&quot;choice-1&quot; /&gt;&lt;label for=&quot;chk-1&quot;&gt;&lt;span&gt;&lt;/span&gt;Option 1&lt;/label&gt; 
-&lt;input type=&quot;checkbox&quot; name=&quot;chk-group&quot; id=&quot;chk-2&quot; value=&quot;choice-2&quot; checked /&gt;&lt;label for=&quot;chk-2&quot;&gt;&lt;span&gt;&lt;/span&gt;Option 2&lt;/label&gt; 
-&lt;input type=&quot;checkbox&quot; name=&quot;chk-group&quot; id=&quot;chk-3&quot; value=&quot;choice-2&quot; checked /&gt;&lt;label for=&quot;chk-3&quot;&gt;&lt;span&gt;&lt;/span&gt;Option 3&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;chk-group&quot; id=&quot;chk-1&quot; value=&quot;choice-1&quot; /&gt;&lt;label for=&quot;chk-1&quot;&gt;&lt;span&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;Option 1&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;chk-group&quot; id=&quot;chk-2&quot; value=&quot;choice-2&quot; checked /&gt;&lt;label for=&quot;chk-2&quot;&gt;&lt;span&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;Option 2&lt;/label&gt;   
+&lt;input type=&quot;checkbox&quot; name=&quot;chk-group&quot; id=&quot;chk-3&quot; value=&quot;choice-2&quot; checked /&gt;&lt;label for=&quot;chk-3&quot;&gt;&lt;span&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;Option 3&lt;/label&gt;
 </pre>
         </div>
     </div>
@@ -555,10 +557,11 @@
 </section>
 <!-- / Forms -->
     
-    <section id="content-buttons" class="demo-section">
+<section id="content-buttons" class="demo-section">
 
-    <h1 class="demo-title">Buttons</h1>
-    <p class="demo-details">Ut eos sint vocibus necessitatibus.</p>
+    <header class="demo-heading">
+        <h1 class="demo-title">Buttons</h1>
+    </header>
 
     <div class="row demo-row">
         <div class="col-d_6-t_12-s_12 demo-eg">
@@ -719,8 +722,9 @@
     
  <section id="content-images" class="demo-section">
     
-    <h1 class="demo-title">Images</h1>
-    <p class="demo-details">Ut eos sint vocibus necessitatibus.</p>
+    <header class="demo-heading">
+        <h1 class="demo-title">Images</h1>
+    </header>
 
     <div class="row demo-row">
         <div class="col-d_6-t_12-s_12 demo-eg">
@@ -774,8 +778,10 @@
     
 <section id="content-social" class="demo-section">
 
-    <h1 class="demo-title">Social Share Buttons</h1>
-    <p class="demo-details"></p>
+    <header class="demo-heading">
+        <h1 class="demo-title">Social Share Buttons</h1>
+        <p class="demo-details">A simple jquery app that will allow you to easily add social sharing buttons to your site.</p>
+    </header>
     
     <div class="row">
         <div class="col-d_6-t_12-s_12 demo-eg">
