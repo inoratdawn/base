@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-GB">
     <head>
-
         <title>base.dev</title>
-        
         <meta charset="UTF-8" />
         <meta name="description" content="Base.dev" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -17,12 +15,10 @@
         <meta property="og:image" content="" />
         <meta property="og:description" content="A simple HTML/ CSS UI template" />
         <meta property="og:site_name" content="base.dev" />
-        
-        <link rel="stylesheet" type="text/css" media="all" href="static/css/screen.css" />
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,300italic,400italic,700italic,600italic,800,800italic' rel='stylesheet' type='text/css' />
-        <link href='https://fonts.googleapis.com/css?family=Hind:400,300,500,600,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+        <link rel="stylesheet" type="text/css" media="all" href="css/screen.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,300italic,400italic,700italic,600italic,800,800italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Hind:400,300,500,600,700" rel="stylesheet" type="text/css" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
     </head>
 <body>
  
@@ -102,7 +98,34 @@
     
 </section>
 <!-- / Grid -->
-      
+ 
+<section id="content-carousel" class="demo-section">
+    
+    <header class="demo-heading">
+        <h1 class="demo-title">Owl Carousel</h1>
+    </header>
+    
+    <div class="row demo-row">
+        <div class="col-d_12-t_12-s_12 demo-eg">
+            <h2 class="demo-subtitle">Standard</h2>
+            <div class="owl-carousel">
+                <div class="item"><img src="http://placehold.it/1200x400.png&text=1" /></div>
+                <div class="item"><img src="http://placehold.it/1200x400.png&text=2" /></div>
+                <div class="item"><img src="http://placehold.it/1200x400.png&text=3" /></div>
+                <div class="item"><img src="http://placehold.it/1200x400.png&text=4" /></div>
+                <div class="item"><img src="http://placehold.it/1200x400.png&text=5" /></div>
+            </div>
+        </div>
+        <div class="col-d_12-t_12-s_12">
+<pre class="prettyprint">
+</pre>
+        </div>
+    </div>
+    <!-- / Paragraphs -->
+
+</section>
+<!-- / Typography -->    
+    
 <section id="content-typography" class="demo-section">
     
     <header class="demo-heading">
@@ -923,11 +946,12 @@ $("#socialr").socialr({
     
 
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-<script src="lib/jquery-2.1.4.min.js"></script>  
+<script src="js/vendor/jquery-2.1.4.min.js"></script>  
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-<script src="lib/jquery.scrollTo.min.js"></script>
-<script src="lib/jquery.waypoints.min.js"></script>
-<script src="lib/socialr.js"></script>
+<script src="js/vendor/jquery.scrollTo.min.js"></script>
+    <script src="js/vendor/jquery.owlCarousel.min.js"></script>
+<!--<script src="js/vendor/jquery.waypoints.min.js"></script>-->
+<script src="js/vendor/socialr.js"></script>
 <script src="js/application.js"></script>   
     
 </body> 

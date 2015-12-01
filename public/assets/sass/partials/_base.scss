@@ -6,7 +6,7 @@
 // Basics
 @import "partials/reset";
 @import "partials/grid";
-@import "partials/social";
+
 @import "partials/typography";
 //@import "partials/lists";
 @import "partials/buttons";
@@ -15,9 +15,13 @@
 @import "partials/images";
 @import "partials/navigation";
 
-//@import "partials/misc";
+// External
+@import "partials/owlcarousel";
+@import "partials/owlcarousel-theme";
+@import "partials/socialr";
 
 
+/* DEMO */
 
 .demo-section {
     max-width: 80%;

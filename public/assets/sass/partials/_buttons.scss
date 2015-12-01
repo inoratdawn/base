@@ -1,31 +1,46 @@
+$border: 2px solid $lightgrey;
+$border-radius: 5px;
+$line-height: 44px;
+$padding: 0.5em 1.5em 0.3em 1.5em;
+$padding-sml: 0.3em 0.8em 0.1em 0.8em;
+$padding-lrg:  1em 2em 0.8em 2em;
+$text-transform: uppercase;
+$font-size: 0.9em;
+$font-weight: 700;
+$margin: 0 0 5px 0;
+$color: $lightgrey;
+
 button,
 a.btn,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    cursor: pointer;
-    border-radius: 0;
-    border: 0;
-    border: 2px solid $lightgrey;
+    
+    border-radius: $border-radius;
+    border: $border;
     background-color: $white;
-    color: $lightgrey;
+    color: $color;
     font-family: $font-buttons;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    padding: 1em 1.5em 0.8em 1.5em;
-    font-weight: 700;
-    margin-bottom: 5px;
+    text-transform: $text-transform;
+    font-size: $font-size;
+    padding: $padding;
+    font-weight: $font-weight;
+    margin: $margin;
     -webkit-transition: all 100ms linear;
     -moz-transition: all 100ms linear;
     -o-transition: all 100ms linear;
     transition: all 100ms linear;
+    display: inline-block;
+    text-decoration: none;
 
     &:hover,
     &:focus,
     &:active {
         border-color: $black;
         color: $black;
+        cursor: pointer;
     }
+    
     &[disabled], &.disabled {
         background: lighten($lightgrey, 10%);
         color: $lightgrey;
@@ -39,11 +54,11 @@ input[type="submit"] {
     }
 
     &.lrg {
-        padding: 1.5em 2em 1.3em 2em;
+        padding: $padding-lrg;
     }
     
     &.sml {
-        padding: 0.5em 1em 0.3em 1em;
+        padding: $padding-sml;
     }
     
     &.full {
@@ -53,8 +68,8 @@ input[type="submit"] {
     }
 
     &.primary {
-        color: $primary-color;
         border-color: $primary-color;
+        color: $primary-color;
         &:hover,
         &:focus,
         &:active {
@@ -64,8 +79,8 @@ input[type="submit"] {
     }
     
     &.secondary {
-        color: $secondary-color;
         border-color: $secondary-color;
+        color: $secondary-color;
         &:hover,
         &:focus,
         &:active {
@@ -75,8 +90,8 @@ input[type="submit"] {
     }
     
     &.tertiary {
-        color: $tertiary-color;
         border-color: $tertiary-color;
+        color: $tertiary-color;
         &:hover,
         &:focus,
         &:active {
@@ -103,9 +118,4 @@ input[type="submit"] {
         }
         
     }
-}
-
-.btn {
-    display: inline-block;
-    text-decoration: none;
 }

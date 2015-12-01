@@ -2,14 +2,20 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var minifycss = require('gulp-minify-css');
+var autoprefixer = require('gulp-autoprefixer');
+var sourcemaps = require('gulp-sourcemaps');
 var rename = require('gulp-rename');
 var livereload = require('gulp-livereload');
 
 /* Compile Our Sass */
 gulp.task('sass', function() {
-    return gulp.src('assets/sass/*.scss')
+    return gulp
+        .src('assets/sass/*.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(gulp.dest('static/css'))
+        .pipe(sourcemaps.write())
+        .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
+        .pipe(gulp.dest('css'))
         //.pipe(rename({suffix: '.min'}))
         //.pipe(minifycss())
         //.pipe(gulp.dest('stylesheets'))
