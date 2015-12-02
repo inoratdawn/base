@@ -21,14 +21,33 @@
 @import "partials/socialr";
 
 
+
+#map {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+#map .marker i {
+    font-size: 20px;
+    color: #FFF;
+    line-height: 25px;
+}
+
 /* DEMO */
 
 .demo-section {
-    max-width: 80%;
+    max-width: 90%;
     width: 100%;
     margin: 0 auto;
     border-bottom: 1px solid #EEE;
     padding: 50px 0;
+    @include respond-to(tablet) {
+        padding: 40px 0;
+    }
+    @include respond-to(mobile) {
+        padding: 25px 0;
+    }
     .demo-title {
         font-size: 1em; 
         text-transform: uppercase;
@@ -49,6 +68,12 @@
     }
     .demo-eg {
         padding: 10px 40px 40px 0;
+        @include respond-to(tablet) {
+            padding: 20px 0 0 0;
+        }
+        @include respond-to(mobile) {
+            padding: 20px 0 0 0;
+        }
     }
     .demo-grid {
         [class*='col-'] {
