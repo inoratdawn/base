@@ -76,60 +76,57 @@ var app = {
     
     initGoogleMaps: function() {
         
-        var pins = [{
-            "pin": {
-                "path": "M0-48c-9.8 0-17.7 7.8-17.7 17.4 0 15.5 17.7 30.6 17.7 30.6s17.7-15.4 17.7-30.6c0-9.6-7.9-17.4-17.7-17.4z"
-            },
-            "bubble": {
-                "path": "M17.501,35.670 L11.968,26.165 L5.053,26.165 C2.208,26.165 -0.106,24.084 -0.106,21.524 L-0.106,4.632 C-0.106,2.073 2.208,-0.009 5.053,-0.009 L29.947,-0.009 C32.792,-0.009 35.106,2.073 35.106,4.632 L35.106,21.524 C35.106,24.084 32.792,26.165 29.947,26.165 L23.033,26.165 L17.501,35.670 ZM5.053,2.563 C3.639,2.563 2.487,3.491 2.487,4.632 L2.487,21.524 C2.487,22.666 3.639,23.593 5.053,23.593 L13.461,23.593 L17.497,30.527 L21.531,23.593 L29.945,23.593 C31.360,23.593 32.511,22.666 32.511,21.524 L32.511,4.632 C32.511,3.491 31.357,2.563 29.945,2.563 L5.053,2.563 Z"
-            }
-        }];
-
+        
         var locations = [
             { 
-                "title": "Bondi Beach", 
-                "latitude": "-33.890542", 
-                "longitude": "151.274856", 
+                "title": "Home", 
+                "latitude": "52.514108", 
+                "longitude": "-1.834418", 
                 "pin": "pin", 
-                "icon": "<i class='fa fa-diamond'></i>",
+                "icon": "<i class='fa fa-star'></i>",
                 "color": "blue"
             },
             { 
-                "title": "Coogee Beach", 
-                "latitude": "-33.923036", 
-                "longitude": "151.259052", 
-                "pin": "pin", 
+                "title": "Star City", 
+                "latitude": "52.505479", 
+                "longitude": "-1.856490", 
+                "pin": "shield", 
                 "icon": "<i class='fa fa-star'></i>",
-                "color": "pink"
-            },
-            { 
-                "title": "Cronulla Beach", 
-                "latitude": "-34.028249", 
-                "longitude": "151.157507", 
-                "pin": "pin", 
-                "icon": "<i class='fa fa-hashtag'></i>",
                 "color": "green"
             },
             { 
-                "title": "Manly Beach", 
-                "latitude": "-33.80010128657071", 
-                "longitude": "151.28747820854187", 
-                "pin": "pin", 
-                "icon": "<i class='fa fa-ban'></i>",
-                "color": "orange"
-            },
-            { 
-                "title": "Maroubra Beach", 
-                "latitude": "-33.950198", 
-                "longitude": "151.259302", 
+                "title": "Fazeley Street", 
+                "latitude": "52.479347", 
+                "longitude": "-1.884740", 
                 "pin": "bubble", 
-                "icon": "<i class='fa fa-bicycle'></i>",
-                "color": "red"
+                "icon": "<i class='fa fa-star'></i>",
+                "color": "purple"
             }
         ];
         
         
         /* ----- */
+        
+        function Marker(custom) {
+            var markers = [{
+                "pin": {
+                    "path": "M46.8,142.9c0.8,0.8,1.5,1.3,2.2,1.7l0,0l1.4,0.4l1.4-0.4l0,0c0.7-0.4,1.4-0.9,2.2-1.7c0,0,41.6-42.7,45.8-79.8 c0.3-1.9,0.4-3.8,0.4-5.8c0-26.2-22.5-47.4-50.1-47.4C22.4,9.9-0.1,31.1-0.1,57.3c0,2,0.2,4,0.4,5.9 C4.6,100.2,46.8,142.9,46.8,142.9z",
+                    "point" : { x: 55, y: 150 },
+                    "icon" : { x: 1, y: 19 }
+                },
+                "shield": {
+                    "path": "M91.890,36.797 C92.502,28.979 94.876,21.852 99.011,15.415 L83.160,0.010 C78.106,4.302 72.363,6.601 65.930,6.908 C59.957,7.521 54.367,6.448 49.160,3.689 C43.800,6.295 38.209,7.368 32.390,6.908 C26.263,6.448 20.827,4.379 16.079,0.700 L0.227,15.875 C4.056,22.618 6.200,29.593 6.660,36.797 C6.813,40.169 5.817,44.844 3.673,50.821 C2.448,54.040 1.529,56.876 0.917,59.328 C0.457,61.781 0.151,63.697 -0.002,65.076 C-0.156,71.360 1.682,77.032 5.511,82.090 C8.421,85.922 13.322,90.060 20.214,94.505 C27.565,98.184 33.232,100.483 37.214,101.403 C37.674,101.556 38.248,101.824 38.937,102.207 C39.626,102.591 40.200,102.859 40.660,103.012 L43.876,104.391 C46.480,105.924 48.241,107.457 49.160,108.990 C50.232,107.304 51.993,105.771 54.444,104.391 C56.435,103.625 57.890,103.012 58.809,102.552 C60.340,101.939 61.182,101.556 61.335,101.403 C62.254,101.096 63.403,100.636 64.782,100.023 L69.836,98.184 C73.664,96.958 76.498,95.732 78.336,94.505 C84.921,90.060 89.746,85.998 92.809,82.320 C96.638,77.262 98.552,71.514 98.552,65.076 C98.246,62.164 96.944,57.566 94.647,51.281 C92.502,44.997 91.583,40.169 91.890,36.797 L91.890,36.797 Z",
+                    "point" : { x: 55, y: 110 },
+                    "icon" : { x: 1, y: 10 }
+                },
+                "bubble": {
+                    "path": "M54.7,117.7l-13-21.9H18.4c-15,0-15,0-15-16.3V20c0-16.3,0-16.3,15-16.3H91c15.1,0,15,0.8,15,16.3v59.4 c0,16.1,0,16.1-15,16.3H67.7L54.7,117.7z",
+                    "point" : { x: 55, y: 110 },
+                    "icon" : { x: 0, y: 10 }
+                }
+            }];
+            return markers[0][custom];
+        }
         
         function CustomMarker(options) {
             var mrk = new google.maps.Marker({
@@ -137,86 +134,82 @@ var app = {
                 map: options.map,
                 icon: options.icon
             });
-            this.latlng = options.position;	
             this.setMap(options.map);
+            this.latlng = options.position;	
             this.map_icon_label = options.map_icon_label;
+            this.map_icon_position = options.map_icon_position;
+            this.div = jQuery('<div/>', {
+                class: 'marker',
+                css: {
+                    width: "30px",
+                    height: "30px",
+                    textAlign: "center",
+                    position: "absolute",
+                    display: "block"
+                },
+                append: this.map_icon_label
+            });
             return mrk;
         }
 
         CustomMarker.prototype = new google.maps.OverlayView();
+        CustomMarker.prototype.onAdd = function() {
+            $(this.div).appendTo(this.getPanes().overlayImage);
+            this.listeners = [
+                google.maps.event.addListener(this, 'position_changed', function() { this.draw(); }),
+                google.maps.event.addListener(this, 'text_changed', function() { this.draw(); }),
+                google.maps.event.addListener(this, 'zindex_changed', function() { this.draw(); })
+            ];
+        };
         CustomMarker.prototype.draw = function() {
             var self = this;
-            var div = this.div;
-            var panes = this.getPanes();
-            var point = this.getProjection().fromLatLngToDivPixel(this.latlng);
-            if (!div) {
-                var div = this.div = jQuery('<div/>', {
-                    class: 'marker',
-                    css: {
-                        width: "25px",
-                        height: "25px",
-                        textAlign: "center",
-                        position: "absolute",
-                        background: "pink"
-                    },
-                    append: this.map_icon_label
-                }).appendTo(panes.overlayImage);
-                google.maps.event.addDomListener(div, "click", function(event) {			
-                    google.maps.event.trigger(self, "click");
-                });
-            }
             var point = this.getProjection().fromLatLngToDivPixel(this.latlng);
             if(point) {
-                $(div).css("left",point.x);
-                $(div).css("top",point.y);
+                $(this.div).css("left",point.x-($(this.div).width()/2)-this.map_icon_position.x);
+                $(this.div).css("top",point.y-($(this.div).height())-this.map_icon_position.y);
             }
 
         };
-
-        CustomMarker.prototype.remove = function() {
-            if (this.div) {
-                this.div.parentNode.removeChild(this.div);
-                this.div = null;
-            }	
-        };
-
-        CustomMarker.prototype.getPosition = function() {
+        /*CustomMarker.prototype.getPosition = function() {
             return this.latlng;	
-        };
+        };*/
 
         /* ----- */
         
         
         var map = new google.maps.Map(document.getElementById('map'),{
-            center: new google.maps.LatLng(-33.890542,151.274856),
-            zoom: 5,
-            mapTypeId:google.maps.MapTypeId.ROADMAP
+            styles: [
+                {stylers: [{ visibility: 'simplified' }]},
+                {elementType: 'labels', stylers: [{ visibility: 'off' }]}
+            ]
         });
         var markers = [];
         var bounds = new google.maps.LatLngBounds();
         var infowindow = new google.maps.InfoWindow();
         for(var i = 0; i < locations.length; i++) {
             var location = locations[i];
-            
-            var opts = {
-                position: new google.maps.LatLng(location.latitude,location.longitude), 
+            var icon = new Marker(location.pin);
+            var position = new google.maps.LatLng(location.latitude,location.longitude);
+            var marker = new CustomMarker({
+                position: position, 
                 map: map,
                 icon: {
-                    //path: pins[0][location.pin]['path'],
+                    path: icon['path'],
                     fillColor: location.color,
                     fillOpacity: 1,
                     strokeColor: '',
                     strokeWeight: 0,
-                    //anchor: new google.maps.Point(0, 0),
-                    scale: 1
+                    anchor: new google.maps.Point(icon['point']['x'], icon['point']['y']),
+                    scale: 4/10
                 },
-                map_icon_label: location.icon
-            };
-            
-            
-            var marker = new CustomMarker(opts);
+                map_icon_label: location.icon,
+                map_icon_position: {
+                    x: icon['icon']['x'],
+                    y: icon['icon']['y']
+                }
+            });
 
-            bounds.extend(opts.position);
+            bounds.extend(position);
             markers.push(marker);
             
             google.maps.event.addListener(marker, 'click', (function(marker, i) {

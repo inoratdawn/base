@@ -21,6 +21,12 @@
     width: 100%;
 }
 
+// Centered
+[class*='-centered'] {
+    float: none!important;
+    margin: 0 auto!important;
+}
+
 // Classes
 @include respond-to(mobile) {
     @include grid-columns(12,m);
